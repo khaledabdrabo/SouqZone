@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+    <title>product</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="~/content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="~/content/js/jQuery.js"></script>
+    <script type="text/javascript" src="~/content/js/bootstrap.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link rel="stylesheet" href="~/content/css/shopProfileStyle.css" />
+    <link rel="stylesheet" href="~/content/css/productDetailsStyle.css" />
+    <meta charset="utf-8">
+</head>
+<body>
+    <main>
+        <header dir="rtl">
+           <nav  class="nav justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 17.5px; padding-left: 17%; padding-right: 4%;"><img src="~/content/images/LOGO.png"></div>
+               <h4 class="col-lg-3 col-md-6 col-sm-12">
+                   @Html.ActionLink("لوحة التحكم", "Index",null, new {@style="text-decoration: none; padding-left:7px;"})<img src="~/content/images/icons8-back-arrow-26.png">
+               </h4>
+            </nav>
+        </header>
+        
+        <div class="clear"></div>
+        <div class="py-1" style="background-color: dodgerblue"></div>
+        
+        <!--product start-->
+        <div id="product" style="height: auto; overflow: hidden">
+            <div class="container">
+                <div id="text" class="col-8">
+                    <h2>امبوريو ارماني</h2>
+                    <h4>ساعة يد كلاسيك أنالوج بقرص أزرق اللون للرجال من امبوريو أرماني  (AR2472)</h4><br>
+                    <h2 style="float: right; margin-left: 1.3%">1139</h2>
+                    <h2>ج.م</h2><br>
+                    <h5>المواصفات الأساسية</h5>
+                    <ul>
+                        <img src="~/content/images/icons8-circle-filled-12.png">
+                        <li>هيكل وسوار من الستانلس ستيل</li>
+                        <img src="~/content/images/icons8-circle-filled-12.png">
+                        <li>قرص باللون الأزرق المتدرج</li>
+                        <img src="~/content/images/icons8-circle-filled-12.png">
+                        <li>عقارب باللون الفضي</li>
+                        <img src="~/content/images/icons8-circle-filled-12.png">
+                        <li>مؤشرات للدقائق حول الإطار الخارجي</li>
+                        <img src="~/content/images/icons8-circle-filled-12.png">
+                        <li>%أصلي 100</li>
+                    </ul>
+                    <div>
+                        <button id="btn1" type="submit" class="btn btn-success col-md-3 col-sm-6">أضف إلى العربة</button>
+                    </div>
+                    <button id="btn2" type="submit" class="btn btn-primary col-md-3 col-sm-6">اشتري الآن</button>
+                </div>
+                <div id="image" class="col-4">
+                    <img src="~/content/images/watches1.jpg">
+                </div>
+            </div>
+        </div>
+        <!--product end-->
+        
+    </main>
+</body>
+</html>

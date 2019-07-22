@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+#regist #cons{
+    background-color: #66c2ff;
+}
+#consForm{
+    width: 80%;
+    background-color: white;
+    margin-right: 10%;
+    margin-top: 30px;
+    padding: 17px 30px 0px 30px;
+    text-align: right;
+    border: 2px solid #66c2ff;
+    border-radius: 10px;
+    float: right;
+}
+#consForm #form1{
+    width: 40%;
+    float: right;
+}
+#consForm #form2{
+    width: 40%;
+    margin-right: 20%;
+    float: right;
+}
+#consForm input{
+    text-align: right;
+    width: 100%;
+    color: #555555;
+    outline: none;
+    margin-bottom: 18px;
+    height: 35px;
+    background-color: white;
+    padding: 0 20px 0 5px;
+    border: 1px solid #b9c0c3;
+    border-radius: 10px;
+}
+#consForm input[type="radio"]{
+    height: 17px;
+    width: 25%;
+    margin-top: 5px;
+    margin-left: 5%; 
+    border: none;
+    float: right;
+}
+#lable1{
+    margin-right: 2%;
+    margin-left: 8%;
+    margin-bottom: 7px;
+    float: right;
+}
+lable{
+    float: right;
+}
+#radio{
+    color: gray;
+    font-size: 15px;
+}
+#formR{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+#consForm .btn{
+    width: 20%;
+    font-size: 16px;
+    color: white;
+    background-color: #66c2ff;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 29%;
+}

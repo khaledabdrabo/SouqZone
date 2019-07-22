@@ -1,0 +1,469 @@
+﻿<html>
+<head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="~/content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="~/content/js/jQuery.js"></script>
+    <script type="text/javascript" src="~/content/js/bootstrap.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link rel="stylesheet" href="~/content/css/shopProfileStyle.css" />
+    <meta charset="utf-8">
+    
+    <!-- -->
+    <link href="~/content/css/resCarousel.css" rel="stylesheet" type="text/css">
+    <script src="~/content/js/resCarousel.js"></script>
+    <script src="~/content/js/myJava.js"></script>
+    <!-- -->
+    
+    <script>
+        $(document).ready(function(){
+            $("#subscribe").click(function(){
+                $("#i").addClass("fa fa-bell");
+            });
+            
+            /*
+            $("#subscribe").click(function(){
+                $("i").attr("color","dodgerblue");
+            });
+            */
+        });
+    </script>
+    
+</head>
+<body>
+    <main>
+        <header dir="rtl">
+           <nav  class="nav justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 17.5px; padding-left: 17%; padding-right: 4%;"><img src="~/content/images/LOGO.png"></div>
+               <h4 class="col-lg-3 col-md-6 col-sm-12">
+                   @Html.ActionLink("لوحة التحكم", "Index",null, new {@style="text-decoration: none; padding-left:7px;"})<img src="~/content/images/icons8-back-arrow-26.png">
+               </h4>
+            </nav>
+        </header>
+        
+        <div class="clear"></div>
+        <div class="py-1" style="background-color: dodgerblue"></div>
+        
+        <!--shop start-->
+        <div id="shop" dir="rtl">
+            
+            <div id="dv1">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <img id="img" src="~/content/images/swatch.png">
+                        <h3 class="col-md-12">swatch</h3>
+                        <div class="col-md-12" style="margin-top: 15px;" dir="rtl">
+                            <p class="col-6" style="float: right; text-align: left">3,550   مشترك</p>
+                            <img src="~/content/images/icons8-notification-30.png" style="float: right; text-align: right">
+                        </div>
+                        <button id="subscribe" type="button" class="btn btn-primary col-md-1 col-sm-2" style="background-color: transparent; color: dodgerblue">اشتراك</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="container">
+                <div style="direction: rtl">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist" style="margin-top: 50px">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">المنتجات (50)</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">العروض</a>
+                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">حول المتجر</a>
+                          </div>
+                    </nav>
+                    
+                    <div class="tab-content" id="nav-tabContent">
+                        
+            <!---------------------------- product --------------------------------->
+                        
+                        <!--product start-->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div id="product">
+                                <div class="card-deck" style="margin-top: 30px;">
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches4.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد أنالوج بقرص أسود للنساء من كالفن كلاين (K5T33C41)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches3.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد من تومي هيلفيغر 1710354 أنالوج للرجال ازرق (AR1815)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches2.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد للنساء، أنالوج من الستانلس ستيل من دي كيه ان واي (NY2417)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches1.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد كلاسيك أنالوج بقرص أزرق اللون للرجال من امبوريو  (AR2472)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1139</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="card-deck">
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches4.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد أنالوج بقرص أسود للنساء من كالفن كلاين (K5T33C41)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches3.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد من تومي هيلفيغر 1710354 أنالوج للرجال ازرق (AR1815)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches2.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد للنساء، أنالوج من الستانلس ستيل من دي كيه ان واي (NY2417)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches1.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد كلاسيك أنالوج بقرص أزرق اللون للرجال من امبوريو  (AR2472)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1139</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="card-deck">
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches4.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد أنالوج بقرص أسود للنساء من كالفن كلاين (K5T33C41)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches3.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد من تومي هيلفيغر 1710354 أنالوج للرجال ازرق (AR1815)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches2.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد للنساء، أنالوج من الستانلس ستيل من دي كيه ان واي (NY2417)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1157</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                <div class="card">
+                                      <div id="image">
+                                          <img class="card-img-top" src="~/content/images/watches1.jpg" alt="Card image cap">
+                                      </div>
+                                    <div class="card-body">
+                                      <p class="card-text">ساعة يد كلاسيك أنالوج بقرص أزرق اللون للرجال من امبوريو  (AR2472)</p>
+                                        <h5 class="card-title" style="margin-left: 2%">1139</h5>
+                                        <h5 class="card-title">ج.م</h5>
+                                        @Html.ActionLink("التفاصيل", "ProductDetails",null, new {@class="btn btn-primary"})
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                         </div>
+                        <!--product end-->
+                        
+            <!---------------------------- offer --------------------------------->
+                        
+                        <!--offer start-->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div id="offer">
+                                <div style="overflow: hidden">
+                                    <h4>تخفيضات 50%</h4>
+                                    <div class="resCarousel" data-items="1-2-4-5" data-slide="5">
+                                        <div class="resCarousel-inner">
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches1.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches2.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches3.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches4.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches7.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches4.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches1.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches4.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches2.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches3.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches4.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div><a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches7.jpg" class="img-responsive"></a></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button class='btn btn-default leftRs'><img src="~/content/images/icons8-back-16.png"></button>
+                                        <button class='btn btn-default rightRs'><img src="~/content/images/icons8-forward-16.png"></button>
+                                    </div>
+                                </div>
+
+                                <div style="overflow: hidden">
+                                    <h4>خصومات</h4>
+                                    <div class="resCarousel" data-items="1-2-4-5" data-slide="5" style="margin-bottom: 10px;">
+                                        <div class="resCarousel-inner">
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html" id="a1">
+                                                            <img src="~/content/images/watches/watches1.jpg" class="img-responsive">
+                                                            <span class="badge">خصم 50%</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html" id="a2">
+                                                            <img src="~/content/images/watches/watches2.jpg" class="img-responsive">
+                                                            <span class="badge">خصم 30%</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html" id="a3">
+                                                            <img src="~/content/images/watches/watches3.jpg" class="img-responsive">
+                                                            <span class="badge">خصم 60%</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html" id="a4">
+                                                            <img src="~/content/images/watches/watches4.jpg" class="img-responsive">
+                                                            <span class="badge">خصم 20%</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html" id="a5">
+                                                            <img src="~/content/images/watches/watches7.jpg" class="img-responsive">
+                                                            <span class="badge">خصم 70%</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches1.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches2.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches3.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches4.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches7.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches1.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="tile">
+                                                    <div>
+                                                        <a href="~/content/ProductDetails.html"><img src="~/content/images/watches/watches2.jpg" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button class='btn btn-default leftRs'><img src="~/content/images/icons8-back-16.png"></button>
+                                        <button class='btn btn-default rightRs'><img src="~/content/images/icons8-forward-16.png"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--offer end-->
+                        
+            <!---------------------------- about --------------------------------->
+                        
+                        <!--about start-->
+                        <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                            <div id="about">
+                                <ul>
+                                    <li>
+                                        <img src="~/content/images/icons8-phone-filled-18.png">
+                                        <p>1234567890</p>
+                                    </li>
+                                    <li>
+                                        <img src="~/content/images/icons8-envelope-18.png">
+                                        <a href="~/content/#">mail@example.com</a>
+                                    </li>
+                                    <li>
+                                        <img src="~/content/images/icons8-marker-filled-18.png">
+                                        <p>شارع المشاية السفلية، المنصورة، الدقهلية</p>
+                                    </li>
+                                </ul>
+                                <img class="col-lg-7 col-md-10 col-sm-12" src="~/content/images/map1.png">
+                            </div>
+                        </div>
+                        <!--about end-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--shop end-->
+        
+    </main>
+</body>
+</html>

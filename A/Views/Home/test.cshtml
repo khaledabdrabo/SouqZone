@@ -1,0 +1,51 @@
+﻿@model A.Models.supplier
+
+@{
+    ViewBag.Title = "test";
+}
+
+<h2>@TempData["msg"]</h2>
+<h1>@TempData["name"]</h1>
+
+@using (Html.BeginForm("test","view",FormMethod.Post,new {enctype="multipart/form-data" })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>supplier</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.supplierID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.supplierID)
+            @Html.ValidationMessageFor(model => model.supplierID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.companyName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.companyName)
+            @Html.ValidationMessageFor(model => model.companyName)
+        </div>
+
+        
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

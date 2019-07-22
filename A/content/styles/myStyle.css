@@ -1,0 +1,48 @@
+.top_bar_user{
+    margin-left: 0;
+    margin-right: 35px;
+}
+.header_main .container{
+    max-width: 1300px;
+}
+.custom_dropdown_list i{
+    margin-left: 0;
+    margin-right: 3px;
+}
+.cart_content {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+/*-----------------------------*/
+.standard_dropdown li.hassubs > a i {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.standard_dropdown li ul{
+    text-align: right;
+    right: 0;
+    left: inherit;
+}
+/*----------------*/
+.cat_menu_container{
+    padding-left: 0;
+    padding-right: 35px;
+}
+.cat_menu_text{
+    margin-left: 0;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.cat_menu li{
+    text-align: right;
+}
+.cat_menu li a i{
+    left: 0;
+    right: inherit;
+}
+.cat_menu li ul{
+    right: 100%;
+    left: 0;
+}
+
+/*-------------------------------*/

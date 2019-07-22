@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+#dv1 #a1{
+    margin-left: 48%;
+}
+#dv2 #a2{
+    background-color: #66c2ff;
+}
+#regist{
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 24%;
+}
+#regist a{
+    margin-left: 2.5%;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 6px;;
+    width: 15%;;
+    color: white;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}

@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+
+/*head start*/
+header{
+    direction: rtl;
+}
+header h2{
+    float: left;
+    padding: 20px 0;
+    color: dodgerblue;
+    text-align: center;
+}
+header h6{
+    float: left;
+    padding: 30px 0;
+    color: dodgerblue;
+    text-align: center;
+}
+/*head end*/
+
+#content{
+    text-align: right;
+    direction: rtl;
+}
+.fa{
+    font-size:20px;
+}
+.cart_count {
+    position: absolute;
+    right: 50%;
+    width: 20px;
+    height: 20px;
+    background: hsl(0, 100%, 48%);
+    border-radius: 50%;
+    text-align: center;
+}
+.cart_count span {
+    display: block;
+    line-height: 20px;
+    font-size: 11px;
+    color: #FFFFFF;
+    transform: translateY(1px);
+}
+table{
+    text-align: center;
+}
+thead{
+    background-color: #b3b3b3;
+    color: white;
+}
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 350px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+table.result_table {
+    direction: rtl;
+}
+table td{
+    vertical-align: middle;
+}
+table ul li{
+    list-style: none;
+    text-align: right;
+    margin-right: 15%;
+}
+.tab-pane{
+    direction: rtl;
+}
+.modal{
+    direction: rtl;
+}
+.modal-title{
+    margin-left: 85%;
+}
+#dddd .modal-title{
+    margin-left: 66.5%;
+}
+#Delete .modal-title{
+    margin-left: 66.5%;
+}
+#add .modal-title{
+    margin-left: 60%;
+}
+
+#offer .modal-title{
+    margin-left: 60%;
+}
+#profEdite{
+    
+}
+#profEdite img{
+    border: 1.5px solid #8080ff;
+    border-radius: 50%;
+    background-color: #e6e6ff;
+    margin-top: 20px;
+    text-align: center;
+}
+#profEdite h3{
+    text-align: center ;
+    color: #8080ff;
+    margin-top: 10px;
+}
+#profEdite p{
+    color: dimgray;
+}
+#profEdite button{
+    margin-top: 20px;
+}
+#offBtn{
+    width: 12%;
+    margin-top: 20px;
+    margin-right: 43.5%;
+}
+#product{
+    margin: 30px 0;
+}
+#product .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+#product .card:hover{
+  transform: scale(1.07);
+  transition: 0.2s ease all;
+  position: relative;
+}
+#product .card-deck{
+    margin-bottom: 30px;
+}
+#product1{
+    margin: 30px 0;
+}
+#product1 .card{
+    padding: 0;
+    border: none;
+}
+#product1 .card-deck{
+    margin-bottom: 30px;
+}
+#product1 .check{
+    opacity:0.5;
+	background-color: #0073e6;
+}
+#product1 .hidden{
+    opacity: 0;
+}
+#product1 img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#btn1{
+    width: 80px;
+}
+#btn3{
+    width: 80px;
+    margin-top: 20px;
+}
+#frm1{
+    margin-top: 20px;
+}
+#n-n1{
+    width: 200px;   
+}
+#frm2{
+     margin-top: 20px;
+}
+#n-n2{
+    width: 200px;   
+}
+#frm3{
+     margin-top: 20px;
+}
+#n-n3{
+    width: 200px;   
+}
+#frm4{
+     margin-top: 20px;
+}
+#n-n4{
+    width: 200px;   
+}
+.color
+{
+    color:dodgerblue
+}
+#profile img
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.table img
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.f
+{
+    font-size:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#shops #search{
+    margin-bottom: 50px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: dodgerblue;
+}
+#search input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#search select{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+#search .btn{
+    font-size: 16px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+#shops .card-deck{
+    margin-bottom: 30px;
+}
+#shops .card{
+    border: none;
+}
+#shops img{
+    margin-top: 3px;
+}
+#shops img:hover{
+  transform: scale(1.04);
+  transition: 0.2s ease all;
+  position: relative;
+}

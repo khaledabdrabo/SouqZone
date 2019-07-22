@@ -1,0 +1,99 @@
+﻿@using A.Models;
+
+@{
+    ViewBag.Title = "Chat server powered by Node.js";
+
+Layout=null;
+}
+<link href="~/content/css/bootstrap.css" rel="stylesheet" />
+<link href="~/content/styles/chat.css" rel="stylesheet" />
+<body class="chat">
+    <div class="chat__sidebar">
+        <h3>Souq Zone Chat</h3>
+
+        @*<div id="status"></div>*@
+
+    </div>
+    <div class="chat__main">
+      @if (ViewBag.AllMsgFrom == null)
+      {<ol id="messages" class="chat__messages"></ol>}
+      else
+      {
+        <ol id="messages" class="chat__messages">
+            @foreach (var item in ViewBag.AllMsgFrom )
+            {
+                
+            <li>
+                <div class=" alert alert-info w-100" style="border-radius:10px;">
+                    <b class="font-weight-bold">@item.mfrom</b> <b>@item.mdate</b> <b class="d-block mt-2">@item.msgcontent</b>
+                </div>
+            </li>
+            }
+        </ol>
+      }
+        
+
+        <div class="chat__footer">
+
+            <form id="message-form">
+                <input class="" name="message" id="message" autofocus autocomplete="off"  type="text" placeholder="ادخل الرساله" style="border-radius:15px" />
+                <button id="sendMessage">ارسال</button>
+            </form>
+            <button id="sendLocation"><img src="img/location.png" title="ارسل موقعي" alt="ارسل موقعي الحالي" width="30px" height="30px" /></button>
+
+        </div>
+    </div>
+</body>
+<script src="~/content/scripts/jquery-1.5.1.min.js"></script>
+<script src="~/content/scripts/modernizr-1.7.min.js"></script>
+<script src="http://localhost:5555/socket.io/socket.io.js"></script>
+<script>
+    $(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('fromEmail');
+        initChat(myParam);
+        var socket;
+        $("#sendMessage").click(function (event) {
+            var message = $("#message").val();
+
+            $("#message").val('');
+            
+            if (socket)
+                socket.emit('message', message);
+            event.preventDefault();
+        });
+
+        function initChat(userName) {
+
+            socket = io.connect('http://localhost:5555'),
+                $status = $("#status");
+
+            socket.on("connect", function () {
+                socket.emit('join', { userName: userName });
+                //$status.html("Connected to the chat room!");
+            });
+
+            socket.on("join", function (data) {
+                $status.html("<b>" + data.userName + "</b> joined the chat");
+
+            });
+
+            socket.on("message", function (data) {
+                var currentdate = new Date();
+                $("<li>").html("<b>" + "[" + data.userName + "] </b> "+  currentdate.getHours()+':' +currentdate.getMinutes()+": " + data.message)
+                         .appendTo("#messages");
+                var url = "/Chat/insertMsg?toEmail=" + urlParams.get('toEmail') + "&fromEmail=" + data.userName + "&msgContent=" + data.message;
+                $.post(url, null, function (data) {
+
+                });
+            });
+
+            socket.on("unjoin", function (data) {
+                $status.html("<b>" + data.userName + "</b> has left the chat");
+            });
+
+        }
+    });
+</script>
+
+

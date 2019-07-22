@@ -1,0 +1,59 @@
+﻿@model A.Models.image
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>viewImage</title>
+</head>
+<body>
+
+
+    <div style="background-color:cornflowerblue ; display:inline-block ;width:1500px ; height:auto">
+        <div style="background-color:chartreuse;width:400px; height:400px;float:left;left:150px"><div><img style="width:400px ; height:400px" src="~/content/images/@Model.picture " /></div></div>
+
+
+        <div class="container" style="background-color:aqua;width:900px;height:auto ;float:right ;right:0px">
+
+            
+
+
+        </div>
+    </div>
+
+    
+
+
+    <fieldset>
+        <legend>image</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.picture)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.picture)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.price)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.price)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.shopOwnerID)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.shopOwnerID)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

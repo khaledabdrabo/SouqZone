@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link rel="stylesheet" href="~/content/css/adminPanelStyle.css" />
+    <script type="text/javascript" src="~/content/js/jQuery.js"></script>
+    <script type="text/javascript" src="~/content/js/bootstrap.js"></script>
+    <title>Sign Up </title>
+    <style type="text/css">
+        
+    </style>
+    <style>
+        #categoryID{
+            display:none;
+        }
+    </style>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/content/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/content/css/style.css">
+
+   
+    <script>
+        
+        $(document).ready(function () {
+            $('#role').on('change', function () {
+                if (this.value == 2) {
+                    $("#categoryID").show();
+                }
+                else if (this.value == 3) {
+                    $("#categoryID").show();
+                }
+                else {
+                    $("#categoryID").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" action="@Url.Action("SignUp", "UI")" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="firstName" id="firstName" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="pass" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="repassword" id="re_pass" placeholder="Repeat your password" />
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="zmdi zmdi-globe"></i></label>
+                                <input type="text" name="country" placeholder="country" />
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="zmdi zmdi-city"></i></label>
+                                <input type="text" name="city" placeholder="City" />
+                            </div>
+
+                            <div class="form-group">
+                                <label><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <select id="role" name="role" class="select">
+                                    <option value="">Sign up as ?</option>
+                                    <option value="1">Consumer</option>
+                                    <option value="2">Supplier</option>
+                                    <option value="3">Shop Owner</option>
+                                </select>
+                            </div>
+                          
+                            <div  id="categoryID"style="">
+                                <div class="form-group">
+                                    <label><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <select name="categoryID" class="select">
+                                        <option value="">اختيار فئة</option>
+                                        <option value="1"> ساعات</option>
+                                        <option value="4"> ملابس</option>
+                                        <option value="2">احزية</option>
+                                        <option value="3">شنط</option>
+                                    </select>
+                                </div>
+                                <input  type="text" value="0" id="lat" name="lat" disabled />
+                                <input  type="text" value="0" id="lng" name="lng" disabled />
+                                <div class="form-group">
+                                    <input type="button" class="btn btn-success" value="تحديد مكانك" onclick="getLocation()" />
+                                </div>
+                            </div> 
+                            
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="~/content/images/red.png" alt="sing up image"></figure>
+                        <a href="" class="signup-image-link">  </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="~/content/js/jQuery.js"></script>
+    <script src="~/content/js/main.js"></script>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+               window.alert(" برجاء السماح لنا بتحديد مكانك ");
+            }
+        }
+        function showPosition(position) {
+            document.getElementById("lat").value = position.coords.latitude;
+            document.getElementById("lng").value = position.coords.longitude;
+        }
+
+    </script>
+</body>
+</html>

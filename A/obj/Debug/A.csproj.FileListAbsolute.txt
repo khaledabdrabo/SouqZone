@@ -1,0 +1,181 @@
+F:\ANA\A\A\bin\A.dll
+F:\ANA\A\A\bin\A.pdb
+F:\ANA\A\A\bin\Microsoft.Web.Infrastructure.dll
+F:\ANA\A\A\bin\Newtonsoft.Json.dll
+F:\ANA\A\A\bin\System.Net.Http.Formatting.dll
+F:\ANA\A\A\bin\System.Web.Helpers.dll
+F:\ANA\A\A\bin\System.Web.Http.dll
+F:\ANA\A\A\bin\System.Web.Http.WebHost.dll
+F:\ANA\A\A\bin\System.Web.Mvc.dll
+F:\ANA\A\A\bin\System.Web.Razor.dll
+F:\ANA\A\A\bin\System.Web.WebPages.Deployment.dll
+F:\ANA\A\A\bin\System.Web.WebPages.dll
+F:\ANA\A\A\bin\System.Web.WebPages.Razor.dll
+F:\ANA\A\A\bin\Newtonsoft.Json.xml
+F:\ANA\A\A\bin\System.Net.Http.Formatting.xml
+F:\ANA\A\A\bin\System.Web.Helpers.xml
+F:\ANA\A\A\bin\System.Web.Http.xml
+F:\ANA\A\A\bin\System.Web.Http.WebHost.xml
+F:\ANA\A\A\bin\System.Web.Mvc.xml
+F:\ANA\A\A\bin\System.Web.Razor.xml
+F:\ANA\A\A\bin\System.Web.WebPages.xml
+F:\ANA\A\A\bin\System.Web.WebPages.Deployment.xml
+F:\ANA\A\A\bin\System.Web.WebPages.Razor.xml
+F:\ANA\A\A\obj\Debug\A.dll
+F:\ANA\A\A\obj\Debug\A.pdb
+F:\ANA\A\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+C:\Users\nader eltantawy\Downloads\A\A\bin\A.dll.config
+C:\Users\nader eltantawy\Downloads\A\A\bin\A.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\A.pdb
+C:\Users\nader eltantawy\Downloads\A\A\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\Newtonsoft.Json.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Net.Http.Formatting.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Helpers.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Http.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Http.WebHost.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Mvc.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Razor.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.Razor.dll
+C:\Users\nader eltantawy\Downloads\A\A\bin\Newtonsoft.Json.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Net.Http.Formatting.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Helpers.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Http.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Http.WebHost.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Mvc.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.Razor.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nader eltantawy\Downloads\A\A\bin\System.Web.WebPages.Razor.xml
+C:\Users\nader eltantawy\Downloads\A\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+C:\Users\nader eltantawy\Downloads\A\A\obj\Debug\A.dll
+C:\Users\nader eltantawy\Downloads\A\A\obj\Debug\A.pdb
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\A.dll.config
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\A.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\A.pdb
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\Microsoft.Web.Infrastructure.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\Newtonsoft.Json.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Net.Http.Formatting.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Helpers.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Http.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Http.WebHost.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Mvc.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Razor.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.Deployment.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.Razor.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\Newtonsoft.Json.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Net.Http.Formatting.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Helpers.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Http.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Http.WebHost.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Mvc.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.Razor.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.Deployment.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\bin\System.Web.WebPages.Razor.xml
+D:\dataset\database\souqZone-master_2\souqZone-master\A\obj\Debug\A.dll
+D:\dataset\database\souqZone-master_2\souqZone-master\A\obj\Debug\A.pdb
+D:\dataset\database\souqZone-master_2\souqZone-master\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\A.dll.config
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\A.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\A.pdb
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\Microsoft.Web.Infrastructure.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\Newtonsoft.Json.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Helpers.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Mvc.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Razor.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.Deployment.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.Razor.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\Newtonsoft.Json.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Helpers.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Mvc.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.Razor.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.Deployment.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\bin\System.Web.WebPages.Razor.xml
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\obj\Debug\A.dll
+D:\FCI\مشروع الداتا بيز\Database Project\new database in groot\souqZone-master\A\obj\Debug\A.pdb
+C:\Users\khale\Desktop\souqZone-master\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+C:\Users\khale\Desktop\souqZone-master\A\obj\Debug\A.dll
+C:\Users\khale\Desktop\souqZone-master\A\obj\Debug\A.pdb
+C:\Users\khale\Desktop\souqZone-master\A\bin\A.dll.config
+C:\Users\khale\Desktop\souqZone-master\A\bin\A.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\A.pdb
+C:\Users\khale\Desktop\souqZone-master\A\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\Newtonsoft.Json.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Net.Http.Formatting.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Helpers.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Http.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Http.WebHost.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Mvc.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Razor.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.Deployment.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.Razor.dll
+C:\Users\khale\Desktop\souqZone-master\A\bin\Newtonsoft.Json.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Net.Http.Formatting.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Helpers.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Http.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Http.WebHost.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Mvc.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.Razor.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.Deployment.xml
+C:\Users\khale\Desktop\souqZone-master\A\bin\System.Web.WebPages.Razor.xml
+F:\souqZone-master\A\obj\Debug\A.dll
+F:\souqZone-master\A\obj\Debug\A.pdb
+F:\souqZone-master\A\bin\A.dll.config
+F:\souqZone-master\A\bin\A.dll
+F:\souqZone-master\A\bin\A.pdb
+F:\souqZone-master\A\bin\Microsoft.Web.Infrastructure.dll
+F:\souqZone-master\A\bin\Newtonsoft.Json.dll
+F:\souqZone-master\A\bin\System.Net.Http.Formatting.dll
+F:\souqZone-master\A\bin\System.Web.Helpers.dll
+F:\souqZone-master\A\bin\System.Web.Http.dll
+F:\souqZone-master\A\bin\System.Web.Http.WebHost.dll
+F:\souqZone-master\A\bin\System.Web.Mvc.dll
+F:\souqZone-master\A\bin\System.Web.Razor.dll
+F:\souqZone-master\A\bin\System.Web.WebPages.Deployment.dll
+F:\souqZone-master\A\bin\System.Web.WebPages.dll
+F:\souqZone-master\A\bin\System.Web.WebPages.Razor.dll
+F:\souqZone-master\A\bin\Newtonsoft.Json.xml
+F:\souqZone-master\A\bin\System.Net.Http.Formatting.xml
+F:\souqZone-master\A\bin\System.Web.Helpers.xml
+F:\souqZone-master\A\bin\System.Web.Http.xml
+F:\souqZone-master\A\bin\System.Web.Http.WebHost.xml
+F:\souqZone-master\A\bin\System.Web.Mvc.xml
+F:\souqZone-master\A\bin\System.Web.Razor.xml
+F:\souqZone-master\A\bin\System.Web.WebPages.xml
+F:\souqZone-master\A\bin\System.Web.WebPages.Deployment.xml
+F:\souqZone-master\A\bin\System.Web.WebPages.Razor.xml
+F:\souqZone-master\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\A.dll.config
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\A.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\A.pdb
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\Newtonsoft.Json.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Net.Http.Formatting.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Helpers.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Http.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Http.WebHost.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Mvc.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Razor.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.Deployment.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.Razor.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\Newtonsoft.Json.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Net.Http.Formatting.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Helpers.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Http.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Http.WebHost.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Mvc.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.Razor.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.Deployment.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\bin\System.Web.WebPages.Razor.xml
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\obj\Debug\A.csprojResolveAssemblyReference.cache
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\obj\Debug\A.dll
+C:\Users\khale\Desktop\lastUpdate\souqZone-master\A\obj\Debug\A.pdb

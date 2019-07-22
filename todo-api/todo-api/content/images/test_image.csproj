@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7B9F574-4EDE-4A99-9E6A-1A935B01D8D6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test_image</RootNamespace>
+    <AssemblyName>test_image</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tensorflow-for-poets-2\scripts\label_image.py" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="10.jpg" />
+    <Content Include="11.jpg" />
+    <Content Include="12.jpg" />
+    <Content Include="13.jpg" />
+    <Content Include="14.jpg" />
+    <Content Include="15.JPG" />
+    <Content Include="16.jpg" />
+    <Content Include="17.jpg" />
+    <Content Include="18.png" />
+    <Content Include="19.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="20.jpg" />
+    <Content Include="21.jpg" />
+    <Content Include="22.jpg" />
+    <Content Include="23.jpg" />
+    <Content Include="24.jpg" />
+    <Content Include="25.jpg" />
+    <Content Include="26.jpg" />
+    <Content Include="27.jpg" />
+    <Content Include="28.jpg" />
+    <Content Include="29.jpg" />
+    <Content Include="3.jpg" />
+    <Content Include="30.png" />
+    <Content Include="32.jpg" />
+    <Content Include="34.jpg" />
+    <Content Include="36.jpg" />
+    <Content Include="37.jpg" />
+    <Content Include="38.jpg" />
+    <Content Include="39.jpg" />
+    <Content Include="4.png" />
+    <Content Include="40.jpg" />
+    <Content Include="42.png" />
+    <Content Include="43.png" />
+    <Content Include="44.png" />
+    <Content Include="45.jpg" />
+    <Content Include="47.jpg" />
+    <Content Include="48.jpg" />
+    <Content Include="5.jpg" />
+    <Content Include="50.jpg" />
+    <Content Include="55.jpg" />
+    <Content Include="56.jpg" />
+    <Content Include="57.jpg" />
+    <Content Include="58.jpg" />
+    <Content Include="59.jpg" />
+    <Content Include="6.jpg" />
+    <Content Include="60.jpg" />
+    <Content Include="61.jpg" />
+    <Content Include="62.jpg" />
+    <Content Include="63.jpg" />
+    <Content Include="7.jpg" />
+    <Content Include="8.png" />
+    <Content Include="9.jpg" />
+    <Content Include="sift_keypoints.jpg" />
+    <Content Include="t2.jpg" />
+    <Content Include="t3.jpg" />
+    <Content Include="t4.jpg" />
+    <Content Include="t5.jpg" />
+    <Content Include="t6.jpg" />
+    <Content Include="t7.jpg" />
+    <Content Include="test.jpg" />
+    <Content Include="v.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

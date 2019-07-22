@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+header h4{
+    float: left;
+    padding: 30px 0;
+    color: dodgerblue;
+    text-align: center;
+}
+#shop{
+    margin-bottom: 50px;
+}
+#shop #dv1{
+    background-color: hsl(0, 0%, 92%);
+    padding: 30px 0;
+}
+#shop #dv1 #img{
+    border: 1.5px solid #6666ff;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 87%);
+    margin-top: 20px;
+    text-align: center;
+}
+#shop #dv1 h3{
+    text-align: center ;
+    color: #6666ff;
+    margin-top: 10px;
+}
+#shop #dv1 p{
+    color: dimgray;
+}
+#shop #dv1 button{
+    margin-top: 15px;  
+}
+#shop #dv1 i{
+    font-size: 24px;
+    color: dimgray;
+    margin-top: 4px;
+}
+
+#product .card-deck{
+    margin-bottom: 50px;
+    text-align: right;
+    line-height: 21px;
+}
+#product .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+#product #image{
+    margin-top: 15px;
+}
+#product #image .card-img-top{
+    width: 60%;
+    margin-right: 20%;
+}
+#product .card-title{
+    float: right;
+    margin-top: 3px;
+}
+#product .btn{
+    margin-right: 20%;
+}
+
+#offer{
+    margin: 10px 0;
+    /*background-color: rgb(250, 250, 250);*/
+}
+#offer h4{
+    text-align: center;
+    padding: 20px 10px;
+    color: steelblue;
+}
+#offer .resCarousel-inner .item img{
+    margin-top: 3px;
+}
+#offer .item:hover img {
+  transform: scale(1.04);
+  transition: 0.2s ease all;
+  position: relative;
+}
+#offer .item:hover{
+    background-color: rgba(70, 130, 180,0.2);
+}
+#offer .leftRs{
+    background-color: white;
+    width: 43px;
+    height: 43px;
+}
+#offer .rightRs{
+    background-color: white;
+    width: 43px;
+    height: 43px;
+}
+#offer i{
+    font-size: 20px;
+}
+#offer .resCarousel{
+    width: 90%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+#offer .resCarousel-inner .item {
+    /*border: 4px solid #eee;*/
+    /*vertical-align: top;*/
+    text-align: center;
+}
+#offer .item .tile{
+    height: 130px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+#offer .resCarousel-inner .item .tile div, .banner .item div {
+            display: table;
+            width: 100%;
+            min-height: 100px;
+            text-align: center;
+            /*box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
+}
+#offer .resCarousel-inner .item h1 {
+            display: table-cell;
+            vertical-align: middle;
+            color: white;
+}
+#offer .banner .item div {
+            background: url('demoImg.jpg') center top no-repeat;
+            background-size: cover;
+            min-height: 100px;
+}
+#offer .item .tile div {
+            background: url('demoImg.jpg') center center no-repeat;
+            background-size: cover;
+            height: 120px;
+            color: white;
+}
+#offer #a1 .badge{
+    width: 6.5%;
+    display: block !important;
+    position: absolute !important;
+    top: 110px !important;
+    right: 120px !important;
+    line-height: 15px !important;
+    height: 20px !important;
+    padding: 3px 7px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 51, 51,0.7) !important;
+}
+#offer #a2 .badge{
+    width: 6.5%;
+    display: block !important;
+    position: absolute !important;
+    top: 110px !important;
+    right: 310px !important;
+    line-height: 15px !important;
+    height: 20px !important;
+    padding: 3px 7px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 51, 51,0.7) !important;
+}
+#offer #a3 .badge{
+    width: 6.5%;
+    display: block !important;
+    position: absolute !important;
+    top: 110px !important;
+    right: 510px !important;
+    line-height: 15px !important;
+    height: 20px !important;
+    padding: 3px 7px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 51, 51,0.7) !important;
+}
+#offer #a4 .badge{
+    width: 6.5%;
+    display: block !important;
+    position: absolute !important;
+    top: 110px !important;
+    right: 710px !important;
+    line-height: 15px !important;
+    height: 20px !important;
+    padding: 3px 7px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 51, 51,0.7) !important;
+}
+#offer #a5 .badge{
+    width: 6.5%;
+    display: block !important;
+    position: absolute !important;
+    top: 110px !important;
+    right: 910px !important;
+    line-height: 15px !important;
+    height: 20px !important;
+    padding: 3px 7px !important;
+    color: white !important;
+    border-radius: 7px !important;
+    background-color: rgba(255, 51, 51,0.7) !important;
+}
+
+#about{
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    margin: 20px;
+    margin-right: 3%;
+    margin-bottom: 50px;
+    float: right;
+    direction: rtl;
+}
+#about ul li{
+    margin-top: 15px;
+    list-style: none;
+    overflow: hidden;
+}
+#about p{
+    list-style-type: none;
+    display: block;
+    color: #908F8F;
+    font-size: 15px;
+    line-height: 10px;
+}
+#about ul li img{
+    vertical-align: middle;
+    float: right;
+    margin-left: 1%;
+}
+#about ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#about ul li a:hover{
+     color: #5d82d2;
+    float: left;
+}

@@ -1,0 +1,43 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetMembers</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table>
+        <tr>
+            <th>
+                @ViewBag.r
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in ViewBag.result) {
+        <tr>
+            <td>
+                @item.picture
+            </td>
+            <td>
+                @item.price
+            </td>
+            <td>
+                @item.shopOwnerID
+            </td>
+            
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

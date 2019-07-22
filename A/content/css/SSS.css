@@ -1,0 +1,45 @@
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    position:relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+}
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+.MultiCarousel .MultiCarousel-inner .pad15{
+    height: 130px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div {
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    background:#f1f1f1;
+    color:#666;
+}
+.MultiCarousel .leftRs, .MultiCarousel .rightRs {
+    position:absolute;
+    border-radius:50%;
+    top:calc(50% - 20px);
+    background-color: steelblue !important;
+}
+.MultiCarousel .leftRs { 
+    left:0;
+}
+.MultiCarousel .rightRs {
+    right:0;
+}
+.MultiCarousel .leftRs.over, .MultiCarousel .rightRs.over {
+    pointer-events: none;
+    background:#ccc;
+}

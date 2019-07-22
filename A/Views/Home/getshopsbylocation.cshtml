@@ -1,0 +1,453 @@
+﻿
+
+@model IEnumerable<A.Models.shopOwner>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <title>Souq zone</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tagerly shop project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/Content/styles/bootstrap4/bootstrap.min.css">
+    <link href="~/content/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/content/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/content/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="~/content/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/content/plugins/slick-1.8.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/content/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/content/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/content/styles/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="~/content/css/footerStyle.css">
+
+    <style>
+        #shop .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+            #shop .card img {
+                margin-bottom: 10px;
+                height: 130px;
+            }
+
+        #shop img {
+            border-radius: 10px;
+        }
+
+        #shop .card:hover {
+            transform: scale(1.05);
+            transition: 0.2s ease all;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="super_container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <!-- Top Bar -->
+
+            <div class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex flex-row">
+                            <div class="top_bar_content mr-auto">
+                                <div class="top_bar_user">
+                                    <div><a href="~/Content/إنشاء حساب.html" target="_blank">إنشاء حساب</a></div>
+                                    <div><a href="~/Content/Login.html" target="_blank">تسجيل دخول</a></div>
+                                    <div class="user_icon"><img src="~/Content/images/user.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Main -->
+
+            <div class="header_main">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Logo -->
+                        <div class="col-lg-3 col-sm-3 col-3 order-1">
+                            <div class="logo_container">
+                                <div class="logo"><a href="~/Content/#"><img src="~/Content/images/LOGO.png"></a></div>
+                            </div>
+                        </div>
+
+                        <!-- Search -->
+                        <div class="col-lg-2 col-12 order-lg-3 order-4 text-lg-right text-right">
+                            <div class="header_search">
+                                <div class="header_search_content">
+                                    <div class="header_search_form_container">
+                                        @using (Html.BeginForm("home", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                        {
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                                                <label for="files" class="btn" style="margin-right: 25%; margin-top:5px; color: blue">اختر صورة</label>
+                                                <input type="file" id="files" name="file" required="required" class="header_search_input" dir="rtl" style="visibility:hidden; width: 10%;">
+                                                <button type="submit" class="header_search_button trans_300" value="Submit"><img src="~/Content/images/search.png" alt=""></button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12 order-lg-2 order-3 text-lg-right text-right">
+                            <div class="header_search">
+                                <div class="header_search_content">
+                                    <div class="header_search_form_container" style="background-color:aqua ;width:500px; height:50px; border: 0;">
+                                        @using (Html.BeginForm("getshopsbylocation", "Home"))
+                                        {
+                                            <div style="background-color:white; height:50px; border: solid 1px #e5e5e5; border-radius: 5px;">
+
+
+                                                <select name="select1" style="width:43%; height:48px ;float:left; border: 0;">
+                                                    <option value="username" selected>اختر مكان</option>
+                                                    <option value="mansoura">المنصورة</option>
+                                                    <option value="talkh">طلخا</option>
+                                                    <option value="smaanoud">سمنود</option>
+                                                    <option value="mahalah">المحلة</option>
+                                                    <option value="tanta">طنطا</option>
+                                                    <option value="cairo">القاهرة</option>
+                                                    <option value="alex">الاسكندرية</option>
+                                                    <option value="damanhour">دمنهور</option>
+                                                    <option value="santa">السنطة</option>
+                                                </select>
+                                                <div style="height:30px; margin-top: 8px; float: left; border-right: 1px solid #e5e5e5;  padding-left: 2%"></div>
+                                                <select name="select2" style="width:39.5%; height:48px ;float:left;; border: 0; ">
+                                                    <option value="username" selected>اختر متجر</option>
+                                                    <option value="4">ملابس</option>
+                                                    <option value="2">احذية</option>
+                                                    <option value="1">ساعات</option>
+                                                    <option value="5">اجهزة كهربية</option>
+                                                    
+
+                                                    <option value="3">شنط</option>
+                                                    
+
+                                                </select>
+                                                <button type="submit" class="header_search_button trans_300" value="Submit"><img src="~/Content/images/search.png" alt=""></button>
+
+
+
+
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-9 order-lg-3 order-2 text-lg-right text-right">
+                            <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                                <!-- Cart -->
+                                <div class="cart">
+                                    <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                        <div class="cart_icon">
+                                            <img src="~/Content/images/cart.png" alt="">
+                                            <div class="cart_count"><span>10</span></div>
+                                        </div>
+                                        <div class="cart_content">
+                                            <div class="cart_text"><a href="~/Content/#">سلة التسوق</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+
+            <nav class="main_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="main_nav_content d-flex flex-row">
+
+                                <!-- Categories Menu -->
+
+                                
+
+                                <!-- Main Nav Menu -->
+
+                                <div class="main_nav_menu mr-auto">
+                                    <ul class="standard_dropdown main_nav_dropdown">
+                                        <li><a href="~/Content/#">الصفحة الرئيسية<i class="fas fa-chevron-down"></i></a></li>
+                                        <li class="hassubs">
+                                            <a href="~/Content/#">المحلات<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li><a href="~/Content/shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/product.html">Product<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="~/Content/#">المنتجات<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="~/Content/#">الخدمات<i class="fas fa-chevron-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a>
+                                                    <ul>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                        <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                                <li><a href="~/Content/#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="~/Content/blog.html">نبذة عنا<i class="fas fa-chevron-down"></i></a></li>
+                                        <li style="margin-right: 35px;"><a href="~/Content/contact.html">اتصل بنا<i class="fas fa-chevron-down"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu Trigger -->
+
+                                <div class="menu_trigger_container ml-auto">
+                                    <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                                        <div class="menu_burger">
+                                            <div class="menu_trigger_text">menu</div>
+                                            <div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Menu -->
+
+            <div class="page_menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="page_menu_content">
+
+                                <div class="page_menu_search">
+                                    <form action="#">
+                                        <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
+                                    </form>
+                                </div>
+                                <ul class="page_menu_nav">
+                                    <li class="page_menu_item has-children">
+                                        <a href="~/Content/#">Language<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="~/Content/#">English<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Italian<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Spanish<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Japanese<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="~/Content/#">Currency<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="~/Content/#">US Dollar<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item">
+                                        <a href="~/Content/#">Home<i class="fa fa-angle-down"></i></a>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="~/Content/#">Super Deals<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="~/Content/#">Super Deals<i class="fa fa-angle-down"></i></a></li>
+                                            <li class="page_menu_item has-children">
+                                                <a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a>
+                                                <ul class="page_menu_selection">
+                                                    <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                    <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="~/Content/#">Featured Brands<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="~/Content/#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item has-children">
+                                        <a href="~/Content/#">Trending Styles<i class="fa fa-angle-down"></i></a>
+                                        <ul class="page_menu_selection">
+                                            <li><a href="~/Content/#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            <li><a href="~/Content/#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_menu_item"><a href="~/Content/blog.html">blog<i class="fa fa-angle-down"></i></a></li>
+                                    <li class="page_menu_item"><a href="~/Content/contact.html">contact<i class="fa fa-angle-down"></i></a></li>
+                                </ul>
+
+                                <div class="menu_contact">
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="~/Content/images/phone_white.png" alt=""></div>010test77</div>
+                                    <div class="menu_contact_item"><div class="menu_contact_icon"><img src="~/Content/images/mail_white.png" alt=""></div><a href="~/Content/mailto:testtest@gmail.com">testtest@gmail.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Banner -->
+        <!-- Characteristics -->
+        <!-- Deals of the week -->
+        <!-- Hot New Arrivals -->
+
+        <div class="new_arrivals">
+            <div style="height:20px; width:100%;">
+
+                <h1><center>@ViewBag.Message</center></h1>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    @foreach (var ii in Model)
+                    {
+                        <div class="col-sm-2" id="shop">
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="~/content/images/@ii.shopImg">
+                                <div class="card-block">
+                                    <a href="#"><center>@ii.shopName</center></a>
+                                </div>
+                                @Html.ActionLink("الذهاب الى المتجر","Profile",new {id=@ii.shopOwnerID },new { @class= "btn btn-primary" })
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--footer start-->
+        <div class="clear"></div>
+        <footer dir="ltr" style="margin-top: 50px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer3">
+                        <h3>تواصل معنا</h3>
+                        <ul>
+                            <li>
+                                <p>1234567890</p>
+                                <img src="~/content/images/icons8-phone-20.png">
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <a href="~/content/#">mail@souqzone.com</a>
+                                <img src="~/content/images/icons8-envelope-20.png">
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 footer2">
+                        <h3>تابعونا على</h3>
+                        <ul>
+                            <li>
+                                <a class="a1" href="#">تابعونا على فيس بوك</a>
+                                <img src="~/content/images/icons8-facebook-36.png" />
+                            <li>
+                                <a class="a2" href="#">تابعونا على تويتر</a>
+                                <img src="~/content/images/icons8-twitter-circled-36.png" />
+                            <li>
+                                <a class="a3" href="#">تابعونا على جوجل بلس</a>
+                                <img src="~/content/images/icons8-google-plus-36.png" />
+                            <li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 footer4">
+                        <h3>روابط ذات صلة</h3>
+                        <ul>
+                            <li>
+                                <a href="Home.html">الصفحة الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="about.html">نبذة عنا</a>
+                            </li>
+                            <li>
+                                <a href="Gallery.html">المنتجات</a>
+                            </li>
+                            <li>
+                                <a href="Projects.html">الخدمات</a>
+                            </li>
+                            <li>
+                                <a href="Assets.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+        <div id="foot" class="py-2">
+            <h6><i class="fa fa-copyright"></i> 2019 SOUQZONE.COM جميع الحقوق محفوظة</h6>
+        </div>
+
+        <script src="~/content/js/jquery-3.3.1.min.js"></script>
+        <script src="~/content/styles/bootstrap4/popper.js"></script>
+        <script src="~/content/styles/bootstrap4/bootstrap.min.js"></script>
+        <script src="~/content/plugins/greensock/TweenMax.min.js"></script>
+        <script src="~/content/plugins/greensock/TimelineMax.min.js"></script>
+        <script src="~/content/plugins/scrollmagic/ScrollMagic.min.js"></script>
+        <script src="~/content/plugins/greensock/animation.gsap.min.js"></script>
+        <script src="~/content/plugins/greensock/ScrollToPlugin.min.js"></script>
+        <script src="~/content/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+        <script src="~/content/plugins/slick-1.8.0/slick.js"></script>
+        <script src="~/content/plugins/easing/easing.js"></script>
+        <script src="~/content/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,787 @@
+﻿<html>
+    <head>
+        <title>Admin Panel</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="~/content/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/content/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+        <link rel="stylesheet" href="~/content/css/adminPanelStyle.css" />
+        <script type="text/javascript" src="~/content/js/jQuery.js"></script>
+        <script type="text/javascript" src="~/content/js/bootstrap.js"></script>
+        <meta charset="utf-8">
+        
+        <script>
+            $(document).ready(function(e){
+                $(".img-check").click(function(){
+				$(this).toggleClass("check");
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <main>
+            <!--head start-->
+            <header>
+                <nav class="nav justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-top: 17.5px; padding-left: 17%; padding-right: 4%;"><img src="~/content/images/LOGO.png"></div>
+                    <h2 class="col-lg-3 col-md-4 col-sm-6 col-xs-12">لوحة التحكم</h2>
+                    <h6 class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <a href="~/content/adminPanel.html" style="text-decoration: none;">تسجيل خروج   <img src="~/content/images/icons8-export-24.png" style="transform: rotate(180deg);"></a>
+                    </h6>
+                </nav>
+            </header>
+            <!--head end-->
+            <div class="clear"></div>
+            <div class="py-1" style="background-color: dodgerblue"></div>
+            
+            <!--content start-->
+            <div class="container">
+                <div id="content" class="row">
+
+                    <div class="col-lg-3 col-md-4 col-sm-12" style="margin-top: 110px; margin-bottom: 50px;">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-mem-tab" data-toggle="pill" href="#v-pills-mem" role="tab" aria-controls="v-pills-mem" aria-selected="true">الملف الشخصي</a>
+
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">الأقسام</a>
+
+                            <a class="nav-link" id="v-pills-offer-tab" data-toggle="pill" href="#v-pills-offer" role="tab" aria-controls="v-pills-offer" aria-selected="false">العروض</a>
+
+                            <a class="nav-link" id="v-pills-order-tab" data-toggle="pill" href="#v-pills-order" role="tab" aria-controls="v-pills-order" aria-selected="false"><div class="cart_count"><span>15</span></div>الطلبات</a>
+
+                            <a class="nav-link" id="v-pills-ask-tab" data-toggle="pill" href="#v-pills-ask" role="tab" aria-controls="v-pills-ask" aria-selected="false"><div class="cart_count" style="right: 62%;"><span>10</span></div>الإستفسارات</a>
+
+                            <a class="nav-link" id="v-pills-statistic-tab" data-toggle="pill" href="#v-pills-statistic" role="tab" aria-controls="v-pills-statistic" aria-selected="false">إحصائيات</a>
+                            <br>
+
+                            <a class="nav-link" id="v-pills-shopOwner-tab" data-toggle="pill" href="#v-pills-shopOwner" role="tab" aria-controls="v-pills-shopOwner" aria-selected="false">المحلات</a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            
+            <!-------------------------------------- الملف الشخصي ------------------------------------------->
+                            
+                            <!--الملف الشخصي start-->
+                            <div class="tab-pane fade show active" id="v-pills-mem" role="tabpanel" aria-labelledby="v-pills-mem-tabf">
+                                <h1 class="text-center color f f-amita ">الملف الشخصي</h1>
+                                <div id="profEdite" class="row justify-content-around" style="overflow: hidden">
+                                    <img src="~/content/images/adidas.png">
+                                    <h3 class="col-md-12">adidas</h3>
+                                    <div class="col-md-12" style="margin-top: 15px;" dir="rtl">
+                                        <p class="col-6" style="float: right; text-align: left">3,550   اشتراك</p>
+                                        <p class="col-6" style="float: right">5,550   مشترك</p>
+                                    </div>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#eProfile">تعديل</button>
+                                </div>
+
+                                <!--profile edit-Modal start-->
+                                <div class="modal fade" id="eProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">تعديل</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" style="">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlFile1">اختر صورة</label>
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="n-0n">اسم المحل</label>
+                                                        <input type="text" class="form-control" id="n-n">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="n-0n">تفاصيل عن المحل</label>
+                                                        <textarea class="form-control" id="n-n"></textarea>
+                                                    </div>
+                                                    <a href="~/content/https://www.google.com/maps" style="text-decoration: underline">تغيير موقع المحل</a>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" style="margin-left: 2%">حفظ التغيرات</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--profile edit-Modal end-->
+
+                            </div>
+                            <!--الملف الشخصي end-->
+
+            <!-------------------------------------- الأقسام ------------------------------------------->
+
+                            <!--الأقسام start-->
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <h1 class="text-center color f f-amita ">الأقسام</h1>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist" style="direction: rtl; margin-bottom: 20px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#about" role="tab" aria-controls="home" aria-selected="false">تعديل</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#ab" role="tab" aria-controls="profile" aria-selected="false">إضافة</a>
+                                    </li>
+                                </ul>
+                                
+
+                                <div class="tab-content" id="myTabContent">
+                                    
+                                    <!--تعديل start-->
+                                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="table-wrapper-scroll-y">
+                                            <table class="table table-hover result_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">القسم</th>
+                                                        <th scope="col">اسم القسم</th>
+                                                        <th scope="col">تعديل</th>
+                                                        <th scope="col">حذف</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعات رجالي</td>
+                                                        <td>@Html.ActionLink("تعديل", "Products",null, new {@class="btn btn-warning"})</td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>@Html.ActionLink("تعديل", "Products",null, new {@class="btn btn-warning"})</td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعات نسائي</td>
+                                                        <td>@Html.ActionLink("تعديل", "Products",null, new {@class="btn btn-warning"})</td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعات أطفال</td>
+                                                        <td>@Html.ActionLink("تعديل", "Products",null, new {@class="btn btn-warning"})</td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> 
+                                        </div>
+                                    </div>
+                                    <!--تعديل end-->
+
+                                    <!--Delete Modal start-->
+                                    <div class="modal fade" id="dddd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد؟</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <button type="button" class="btn btn-danger" style="margin-left: 2%">حذف</button>
+                                                    <button type="button" class="btn btn-dark" data-dismiss="modal">إغلاق</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Delete Modal end-->
+
+                                    <!--------------------------------------------------->
+
+                                    <!--إضافة start-->
+                                        <div class="tab-pane fade" id="ab" role="tabpanel" aria-labelledby="profile-tab">
+                                            <form id="frm1">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlFile1">اختر صورة</label>
+                                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="n-0n">اسم القسم</label>
+                                                    <input type="text" class="form-control" id="n-n1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#ddd">إضافة</button>                                               
+                                                </div>
+                                          </form>
+                                    </div>
+                                    <!--إضافة end-->
+                                </div>
+                            </div>
+                            <!--الأقسام end-->
+
+            <!-------------------------------------- العروض ------------------------------------------->
+                            
+                            <!--العروض start-->
+                            <div class="tab-pane fade" id="v-pills-offer" role="tabpanel" aria-labelledby="v-pills-offer-tab">
+                                <h1 class="text-center color f f-amita ">العروض</h1>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 20px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#project" role="tab" aria-controls="home" aria-selected="true">تعديل</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#proj" role="tab" aria-controls="profile" aria-selected="false">إضافة</a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <div class="tab-content" id="myTabContent">
+                                    
+                                    <!--تعديل start-->
+                                    <div class="tab-pane fade show active" id="project" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="table-wrapper-scroll-y">
+                                            <table class="table table-hover result_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">المنتج</th>
+                                                        <th scope="col">اسم المنتج</th>
+                                                        <th scope="col">السعر</th>
+                                                        <th scope="col">تفاصيل العرض</th>
+                                                        <th scope="col">تعديل</th>
+                                                        <th scope="col">حذف</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>خصم 50%</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>اشتري قطعة واحصل على الثانية مجاناً</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>خصم 50%</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>اشتري قطعة واحصل على الثانية مجاناً</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>خصم 50%</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>اشتري قطعة واحصل على الثانية مجاناً</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>خصم 50%</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>اشتري قطعة واحصل على الثانية مجاناً</td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Edit">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete">حذف</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                          </div>
+                                        
+                                        <!--edit Modal start-->
+                                        <div class="modal fade" id="Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">تعديل</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlFile1">اختر صورة</label>
+                                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="n-0n">اسم المنتج</label>
+                                                                <input type="text" class="form-control" id="n-n">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="n-0n">سعر المنتج</label>
+                                                                <input type="text" class="form-control" id="n-n">                      
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="n-0n">تفاصيل العرض</label>
+                                                                <textarea class="form-control" id="n-n"></textarea>                     
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" style="margin-left: 2%">حفظ التغيرات</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--edit Modal end-->
+                                        
+                                        <!--Delete Modal start-->
+                                        <div class="modal fade" id="Delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد؟</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-center">
+                                                        <button type="button" class="btn btn-danger" style="margin-left: 2%">حذف</button>
+                                                        <button type="button" class="btn btn-dark" data-dismiss="modal">إغلاق</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Delete Modal start-->
+                                    </div>
+                                    <!--تعديل end-->
+                                    
+                                    <!--------------------------------------------------->
+                                    
+                                    <!--إضافة start-->
+                                    <div class="tab-pane fade" id="proj" role="tabpanel" aria-labelledby="profile-tab">
+                                        <h5 style="color: lightslategray; margin-top: 10px; font-size: 18px">حدد منتجاتك وأضفها إلى العروض:</h5>
+                                        <div id="product1">
+                                            <div class="card-deck">
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/featured_3.png" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/review_2.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/view_2.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/new_8.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="card-deck">
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/featured_4.png" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/new_2.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/new_10.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/featured_6.png" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="card-deck">
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/view_6.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/view_1.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk2" id="item4" value="val2" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/new_3.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk3" id="item4" value="val3" class="hidden" autocomplete="off">
+                                                </div>
+                                                <div class="card btn">
+                                                    <img src="~/content/images/product/new_6.jpg" alt="..." class="img-thumbnail img-check">
+                                                    <input type="checkbox" name="chk4" id="item4" value="val4" class="hidden" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add" style="margin-right: 40%; margin-top: 15px">أضف إلى العروض</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--add Modal start-->
+                                    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">أضف إلى العروض</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="n-0n">تفاصيل العرض</label>
+                                                            <textarea class="form-control" id="n-n" style="border-color: gray"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="n-0n">المنطقة</label>
+                                                            <select class="custom-select" style="border-color: gray">
+                                                                  <option selected>اختر</option>
+                                                                  <option value="1">المنصورة</option>
+                                                                  <option value="2">القاهرة</option>
+                                                                  <option value="3">دمياط</option>
+                                                            </select>                     
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success" style="width: 15%">تم</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--العروض end-->
+
+            <!-------------------------------------- الطلبات ------------------------------------------->
+
+                            <!--الطلبات start-->
+                            <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-mem-order">
+                                <h1 class="text-center color f f-amita ">الطلبات</h1>
+                                <div style="width: 70%; overflow: hidden; margin-top: 50px; margin-right: 15%">
+                                    <div class="table-wrapper-scroll-y">
+                                        <table class="table table-hover result_table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">اسم المستخدم</th>
+                                                    <th scope="col">عدد الطلبات</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>ahmed123</td>
+                                                    <td>5</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>ahmed123</td>
+                                                    <td>3</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>ahmed123</td>
+                                                    <td>1</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>ahmed123</td>
+                                                    <td>3</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>ahmed123</td>
+                                                    <td>6</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>ahmed123</td>
+                                                    <td>5</td>
+                                                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#view">عرض الطلبات</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                    </div>
+                                </div>
+
+                                <!--view Modal start-->
+                                <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">الطلبات</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="table-wrapper-scroll-y">
+                                                    <table class="table table-hover result_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">المنتج</th>
+                                                                <th scope="col">المكان</th>
+                                                                <th scope="col">الكمية</th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td><img src="~/content/images/watches3.jpg" class="w3-circle">ساعة يد
+                                                                </td>
+                                                                <td>المنصورة</td>
+                                                                <td>3</td>
+                                                                <td  style="text-align: left"><button type="button" class="btn btn-primary">موافق</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td><img src="~/content/images/watches3.jpg" class="w3-circle">ساعة يد
+                                                                </td>
+                                                                <td>دمياط</td>
+                                                                <td>1</td>
+                                                                <td  style="text-align: left"><button type="button" class="btn btn-primary">موافق</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td><img src="~/content/images/watches3.jpg" class="w3-circle">ساعة يد
+                                                                </td>
+                                                                <td>المنصورة</td>
+                                                                <td>5</td>
+                                                                <td  style="text-align: left"><button type="button" class="btn btn-primary">موافق</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">4</th>
+                                                                <td><img src="~/content/images/watches3.jpg" class="w3-circle">ساعة يد
+                                                                </td>
+                                                                <td>دمياط</td>
+                                                                <td>2</td>
+                                                                <td  style="text-align: left"><button type="button" class="btn btn-primary">موافق</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">5</th>
+                                                                <td><img src="~/content/images/watches3.jpg" class="w3-circle">ساعة يد
+                                                                </td>
+                                                                <td>المنصورة</td>
+                                                                <td>3</td>
+                                                                <td  style="text-align: left"><button type="button" class="btn btn-primary">موافق</button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" style="margin-left: 2%">تم</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--view Modal end-->
+                            </div>
+                            <!--الطلبات end-->
+
+            <!-------------------------------------- الاستفسارات ------------------------------------------->
+
+                            <!--الاستفسارات start-->
+                            <div class="tab-pane fade" id="v-pills-ask" role="tabpanel" aria-labelledby="v-pills-mem-ask">
+                                <h1 class="text-center color f f-amita ">الإستفسارات</h1>
+                                <div style="width: 50%; overflow: hidden; margin-top: 50px">
+                                    <div class="table-wrapper-scroll-y">
+                                        <table class="table table-hover result_table">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3" scope="col">الدردشات</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="text-align: right">
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">1 د</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">2:30 م</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">6 د</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">20 فبراير</td>  
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">1 فبراير</td>  
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">20 يناير</td>  
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">10 يناير</td>  
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <td>omer155</td>
+                                                    <td style="text-align: left; color: darkgray;">5 يناير</td>  
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--الاستفسارات end-->
+
+            <!-------------------------------------- إحصائيات ------------------------------------------->
+
+                            <!--إحصائيات start-->
+                            <div class="tab-pane fade" id="v-pills-statistic" role="tabpanel" aria-labelledby="v-pills-mem-statistic">
+                                <h1 class="text-center color f f-amita ">إحصائيات</h1>
+                                <div style="width: 100%; overflow: hidden; padding-right: 3%;">
+                                <img src="~/content/images/chart1.png">
+                                </div>
+                            </div>
+                            <!--إحصائيات end-->
+
+            <!-------------------------------------- المحلات ------------------------------------------->
+
+                            <!--المحلات start-->
+                            <div class="tab-pane fade" id="v-pills-shopOwner" role="tabpanel" aria-labelledby="v-pills-mem-shopOwner">
+                                <h1 class="text-center color f f-amita ">المحلات</h1>
+                                <div style="width: 100%; overflow: hidden">
+                                    <div id="shops">
+                                        <div class="container">
+                                            
+                                            <!--search start-->
+                                            <div id="search"  class="py-2">
+                                                <div class="row justify-content-around" style="width: 85%; margin-right: 7.5%;">
+                                                    <input type="search" class="form-control col-lg-5 col-md-6 col-sm-12 col-xs-12" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ابحث هنا ...">
+                                                    <select class="custom-select col-lg-2 col-md-6 col-sm-12 col-xs-12" dir="rtl">
+                                                          <option selected>اختر مدينة</option>
+                                                          <option value="1">المنصورة</option>
+                                                          <option value="2">القاهرة</option>
+                                                          <option value="3">دمياط</option>
+                                                    </select>
+                                                    <button type="submit" class="btn col-lg-1 col-md-6 col-sm-12 col-xs-12">بحث</button>
+                                                </div>
+                                            </div>
+                                            <!--search end-->
+
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/Sharp_logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/zara-logopng.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/Dell_Logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/swatch-logo.png")'/></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/intel-logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/Mango-Logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/adidas-logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/zara-logopng.png")'/></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/HP_logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/swatch-logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/intel-logo.png")'/></a>
+                                                </div>
+                                                <div class="card">
+                                                    <a href='@Url.Action("Profile", "view")'><img src='@Url.Content("~/Content/Images/Mango-Logo.png")'/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--المحلات end-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content end-->
+        </main>
+    </body>
+</html>

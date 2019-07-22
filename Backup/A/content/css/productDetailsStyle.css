@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+#text{
+    float: left;
+    margin-bottom: 50px;
+    padding: 4% 2% 2% 2%;
+    text-align: right;
+}
+#text h2{
+    font-size: 30px;
+    color: dodgerblue;
+}
+#text h4{
+    color: darkgray;
+    font-size: 21px;
+}
+#text h5{
+    margin-top: 10px;
+    color: #28a745;
+}
+#text ul{
+    list-style: none;
+}
+#text ul li{
+    color: gray;
+}
+#text img{
+    float: right;
+    margin-left: 1%;
+    margin-top: 8px;
+}
+#text #btn1{
+    margin-right: 0;
+    margin-top: 50px;
+    border: none;
+    color: white;
+}
+#text #btn2{
+    margin-right: 0;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+#image{
+    float: left;
+    margin-bottom: 50px;
+    padding: 2%;
+}
+#image img{
+    width: 96%;
+}

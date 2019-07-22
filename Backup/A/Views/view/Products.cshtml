@@ -1,0 +1,390 @@
+﻿<html>
+<head>
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="~/content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link rel="stylesheet" href="~/content/css/adminPanelStyle.css" />
+    <script type="text/javascript" src="~/content/js/jQuery.js"></script>
+    <script type="text/javascript" src="~/content/js/bootstrap.js"></script>
+    <meta charset="utf-8">
+        
+        <script>
+            $(document).ready(function(e){
+                $(".img-check").click(function(){
+				$(this).toggleClass("check");
+                });
+            });
+        </script>
+    </head>
+<body>
+    <main>
+        <header>
+            <nav class="nav justify-content-between">
+                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-top: 17.5px; padding-left: 17%; padding-right: 4%;"><img src="~/content/images/LOGO.png"></div>
+                    <h2 class="col-lg-3 col-md-4 col-sm-6 col-xs-12">لوحة التحكم</h2>
+                    <h6 class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <a href="~/content/adminPanel.html" style="text-decoration: none;">تسجيل خروج   <img src="~/content/images/icons8-export-24.png" style="transform: rotate(180deg);"></a>
+                </h6>
+                </nav>
+            </header>
+        
+        <div class="clear"></div>
+        <div class="py-1" style="background-color: dodgerblue"></div>
+        
+        <!--product start-->
+        <div id="product" style="height: auto; overflow: hidden">
+            <div class="container">
+                <div id="content" class="row">
+                    
+                    <div class="col-10" style="margin-right: 8.3%;">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            
+                            <!--منتجاتي start-->
+                            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <h1 class="text-center color f f-amita ">منتجاتي</h1>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist" style="direction: rtl; margin-bottom: 20px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="true">منتجاتي</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#about" role="tab" aria-controls="home" aria-selected="false">تعديل</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#ab" role="tab" aria-controls="profile" aria-selected="false">إضافة</a>
+                                    </li>
+                                </ul>
+                                
+
+                                <div class="tab-content" id="myTabContent">
+                                    
+                                    <!--عرض start-->
+                                    <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+                                        <h5 style="color: lightslategray; margin-top: 20px; font-size: 18px">اختر منتج وأضفه إلى العروض:</h5>
+                                        <div id="product">
+                                            <div class="card-deck">
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/featured_3.png">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/single_2.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/view_2.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_10.jpg">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-deck">
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/featured_4.png">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_2.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/review_2.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/featured_6.png">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-deck">
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/featured_5.png">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/featured_8.png">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_3.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_6.jpg">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-deck">
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/view_6.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/view_1.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_7.jpg">
+                                                </div>
+                                                <div class="card" data-toggle="modal" data-target="#offer">
+                                                    <img src="~/content/images/product/new_8.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--offer madal start-->
+                                        <div class="modal fade" id="offer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">عروض وتخفيضات</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true" style="">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="n-0n">السعر الجديد</label>
+                                                                <input type="text" class="form-control" id="n-n">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="n-0n">تفاصيل الخصم</label>
+                                                                <textarea class="form-control" id="n-n"></textarea>                     
+                                                            </div>
+                                                        </form>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" style="margin-left: 2%">أضف إلى العروض</button>
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--offer madal end-->
+
+                                    </div>
+                                    <!--عرض end-->
+
+                                    <!--------------------------------------------------->
+
+                                    <!--تعديل start-->
+                                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="table-wrapper-scroll-y">
+                                            <table class="table table-hover result_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">المنتج</th>
+                                                        <th scope="col">اسم المنتج</th>
+                                                        <th scope="col">السعر</th>
+                                                        <th scope="col">مواصفات المنتج</th>
+                                                        <th scope="col">تعديل</th>
+                                                        <th scope="col">حذف</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td><img src="~/content/images/watches3.jpg" class="w3-circle"></td>
+                                                        <td>ساعة يد</td>
+                                                        <td>1157 ج.م</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>- نوع السوار: جلد</li>
+                                                                <li>- لون السوار: بني</li>
+                                                                <li>- شكل القرص: دائري</li>
+                                                                <li>- لون القرص: أزرق</li>
+                                                                <li>- أصلي 100%</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#eeee">تعديل</button></td>
+                                                        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dddd">حذف</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> 
+                                        </div>
+                                    </div>
+                                    <!--تعديل end-->
+
+                                    <!--edit Modal start-->
+                                    <div class="modal fade" id="eeee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">تعديل</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true" style="">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlFile1">اختر صورة</label>
+                                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="n-0n">اسم المنتج</label>
+                                                            <input type="text" class="form-control" id="n-n">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="n-0n">سعر المنتج</label>
+                                                            <input type="text" class="form-control" id="n-n">                      
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="n-0n">مواصفات المنتج</label>
+                                                            <textarea class="form-control" id="n-n"></textarea>                     
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" style="margin-left: 2%">حفظ التغيرات</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--edit Modal end-->
+
+                                    <!--Delete Modal start-->
+                                    <div class="modal fade" id="dddd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد؟</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <button type="button" class="btn btn-danger" style="margin-left: 2%">حذف</button>
+                                                    <button type="button" class="btn btn-dark" data-dismiss="modal">إغلاق</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Delete Modal end-->
+
+                                    <!--------------------------------------------------->
+
+                                    <!--إضافة start-->
+                                        <div class="tab-pane fade" id="ab" role="tabpanel" aria-labelledby="profile-tab">
+                                            <form id="frm1">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlFile1">اختر صورة</label>
+                                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="n-0n">اسم المنتج</label>
+                                                    <input type="text" class="form-control" id="n-n1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="n-0n">سعر المنتج</label>
+                                                    <input type="text" class="form-control" id="n-n1">                      
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="n-0n">مواصفات المنتج</label>
+                                                    <textarea class="form-control" id="n-n1"></textarea>                     
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#ddd">إضافة</button>                                               
+                                                </div>
+                                          </form>
+                                    </div>
+                                    <!--إضافة end-->
+                                </div>
+                            </div>
+                            <!--منتجاتي end-->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product end-->
+        
+    </main>
+</body>
+</html>
