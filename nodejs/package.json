@@ -3,6 +3,6 @@
 	"name": "an-hybrid-app",
 	"version": "0.1.0",
 	"dependencies": {
-		"socket.io": "0.9.x"
+		"socket.io": "2.4.x"
 	}
 }
